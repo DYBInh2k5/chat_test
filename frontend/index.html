@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat - Trò chuyện với AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-header">
+            <h1>💬 AI Chat Assistant</h1>
+            <p>Trò chuyện với AI thông minh</p>
+        </div>
+        
+        <div class="chat-container" id="chatContainer">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <strong>AI:</strong> Xin chào! Tôi là trợ lý AI. Tôi có thể giúp gì cho bạn?
+                </div>
+            </div>
+        </div>
+        
+        <div class="input-container">
+            <textarea 
+                id="userInput" 
+                placeholder="Nhập tin nhắn của bạn..."
+                rows="1"
+            ></textarea>
+            <button id="sendButton" onclick="sendMessage()">
+                <span id="buttonText">Gửi</span>
+                <span id="buttonLoader" class="loader" style="display: none;"></span>
+            </button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
