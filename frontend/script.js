@@ -1,4 +1,7 @@
-const API_URL = 'http://localhost:5000/api/chat';
+// Tự động detect môi trường
+const API_URL = window.location.hostname === 'localhost' 
+    ? 'http://localhost:5000/api/chat'
+    : '/api/chat';
 
 // Tự động điều chỉnh chiều cao textarea
 const userInput = document.getElementById('userInput');
